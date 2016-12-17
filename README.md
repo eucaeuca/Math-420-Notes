@@ -1,1 +1,1 @@
-# Math-420-Notes
+# Notes for basis algebra
