@@ -1,1 +1,1 @@
-# Notes for basis algebra
+# Notes for basic algebra
