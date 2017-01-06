@@ -1,6 +1,0 @@
-PWD /Users/yuchengs/Documents/src/Math-420-Notes
-INPUT /usr/local/texlive/2016/texmf.cnf
-INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT macro.tex
-OUTPUT macro.log
