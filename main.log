@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 JAN 2017 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 JAN 2017 09:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,15 +1001,37 @@ Package mdframed Info: mdframed works in twoside mode on input line 123.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 123.
- [6] (./main.aux) ) 
+Package mdframed Info: mdframed works in twoside mode on input line 132.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 132.
+Package mdframed Info: mdframed works in twoside mode on input line 141.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 141.
+ [6]
+Package mdframed Info: Not enough space on this page on input line 143.
+Package mdframed Info: mdframed works in twoside mode on input line 148.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 148.
+Package mdframed Info: mdframed works in twoside mode on input line 161.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 161.
+Package mdframed Info: mdframed works in twoside mode on input line 167.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 167.
+ [7] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 23277 strings out of 493014
- 452070 string characters out of 6133351
- 521738 words of memory out of 5000000
- 26409 multiletter control sequences out of 15000+600000
- 12578 words of font info for 71 fonts, out of 8000000 for 9000
+ 23286 strings out of 493014
+ 452202 string characters out of 6133351
+ 522838 words of memory out of 5000000
+ 26414 multiletter control sequences out of 15000+600000
+ 12680 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,56p,10414b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,56p,10414b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
@@ -1027,10 +1049,10 @@ fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
 m5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on main.pdf (6 pages, 172587 bytes).
+Output written on main.pdf (7 pages, 178621 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21517 words of extra memory for PDF output out of 24883 (max. 10000000)
 

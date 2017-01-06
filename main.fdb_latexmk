@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex main.idx"] 1482559062 "main.idx" "main.ind" "main" 1483626652
-  "main.idx" 1483626651 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex main.idx"] 1482559062 "main.idx" "main.ind" "main" 1483712177
+  "main.idx" 1483712177 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "main.ind"
   "main.ilg"
-["pdflatex"] 1483626651 "main.tex" "main.pdf" "main" 1483626652
+  "main.ind"
+["pdflatex"] 1483712177 "main.tex" "main.pdf" "main" 1483712177
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -167,15 +167,15 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1480722360 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1463979169 3873397 413fbfbbedb8e719ddc392043a7add02 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "main.aux" 1483626652 1457 c7177f5f26000a69b1df67b0d5a5ce3a ""
-  "main.ind" 1482559062 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.tex" 1483626651 11151 83e0bdaafe400a6831c35e69f8618bb7 ""
-  "main.toc" 1483626652 233 7f9a293e207dc5dfc96ff4920988d054 ""
-  "mymacro.sty" 1483239177 2339 d28570ffe3ef5cac7c1050101dab1bf6 ""
-  "mynotes.cls" 1483607669 5815 95afb5e96c69b464cab7dd29acb82f2e ""
+  "main.aux" 1483712177 1952 b064e77753b785c0d819f82e20d2f583 ""
+  "main.ind" 1483676862 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
+  "main.tex" 1483712177 14132 c81ac9b28df4801e40b479ddf1f908f1 ""
+  "main.toc" 1483712177 290 a4908b8312785e73c991ecee06725668 ""
+  "mymacro.sty" 1483676862 2339 d28570ffe3ef5cac7c1050101dab1bf6 ""
+  "mynotes.cls" 1483676862 5815 95afb5e96c69b464cab7dd29acb82f2e ""
   (generated)
+  "main.log"
   "main.idx"
   "main.pdf"
   "main.aux"
-  "main.log"
   "main.toc"

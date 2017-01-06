@@ -129,9 +129,47 @@ Omit.
 \begin{remark}
 We see that $T^{-1}U^{-1}$ is the left and right inverse of $UT$, therefore the inverse of $(UT)$ is $T^{-1}U^{-1}$.
 \end{remark}
-
-
-
+\begin{definition}[non-singular]
+We call a linear transformation $T$ non-singular if $T\gamma=0\implies\gamma=0,$i.e., the null space of $T$ is $0$.
+\end{definition}
+\begin{remark}
+Evidently, $T$ is one-one if and only if $T$ is non-singular.
+\end{remark}
+\begin{remark}
+ Non-singular linear transformations are those which preserve linear independence, as the following theorem claims.
+\end{remark}
+\begin{theorem}
+Let $T$ be a linear transformation from $V$ into $W$. Then $T$ is non-singular if and only if $T$ carries each linearly independent subset of $V$ onto a linearly independent subset of $W$.
+\end{theorem}
+\begin{proof}
+Suppose that $T$ is non-singular. Let $S$ be a linearly independent subset of $V$. If $\al_1,\ldots,\al_k$ are vectors in $S$, then the vector $T\al_1,\ldots,T\al_k$ are linearly independent. For if $$c_1(T\al_1)+\ldots+c_k(T\al_k)=0$$then $$T(c_1\al_1+\ldots+c_k\al_k) = 0$$therefore $$c_1\al_1+\ldots+c_k\al_k = 0.$$Since $\al_i$ are linearly independent, we have for each $j=1,2,\ldots,k$, $c_j = 0$.\\
+Suppose that $T$ carries independent subsets onto independent subsets. Then $T$ must be non-singular. For if $T\al=0$, and $\al$ is not $0$. Then an independent set $S$ consisting of $\al$ will have its image a dependent set.
+\end{proof}
+\begin{theorem}
+Let $V$ and $W$ be finite-dimensional vector spaces over the field \F{} such that $\dim{V}=\dim{W}$. If $T$ is a linear transformation from $V$ into $W$, the following are equivalent:
+\begin{itemize}
+	\item[(i)]	$T$ is invertible.
+	\item[(ii)] $T$ is non-singular.
+	\item[(iii)] $T$ is on-to.
+\end{itemize}
+\end{theorem}
+\begin{proof}
+Let $n=\dim{V}=\dim{W}.$ Since $$\rank{T}+\nullity{T} = n.$$So if $T$ is non-singular, then $\nullity{T} = 0$ and $\rank{T}= n$, i.e., $T$ is on-to.
+If $T$ is on-to, then $\rank{T} = n$ and therefore $\nullity{T} = 0$ ($T$ is non-singular). \\Therefore $T$ is non-singular if and only if $T(V)=W.$ So, if either condition (ii) or (iii) holds, the other is satisfied as well and $T$ is invertible.
+\end{proof}
+\section{Isomorphism}
+\begin{definition}[isomorphism]
+If $V$ and $W$ are vector spaces over the field \F, any one-one linear transformation $T$ from $V$ onto $W$ is called an isomorphism of $V$ onto $W$. If there exists an isomorphism of $V$ onto $W$, we say that $V$ is isomorphic to $W$.
+\end{definition}
+\begin{remark}
+If $V$ is isomorphic to $W$, then $W$ is isomorphic to $V$.
+\end{remark}
+\begin{theorem}
+Every $n$-dimensional vector space over the field \F is isomorphic to the space $\F^n.$
+\end{theorem}
+\begin{proof}
+Let $V$ be an $n$-dimensional vector space over the field \F and let $\mathcal{B}=\{\al_1,\ldots,\al_n\}$ be a basis for $V$. We define a function $T$ from $V$ to $\F^n$, as follows: If $\al$ is in $V$, let $T\al$ be the $n$-tuple $(x_1,\ldots,x_n)$ of coordinates of $\al$ relative to the ordered basis $\mathcal{\be}$. Also, it's easy to verify $T$ is a linear transformation and $T$ is one-one and on-to.
+\end{proof}
 
 
 
