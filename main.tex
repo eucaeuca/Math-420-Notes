@@ -170,9 +170,43 @@ Every $n$-dimensional vector space over the field \F is isomorphic to the space 
 \begin{proof}
 Let $V$ be an $n$-dimensional vector space over the field \F and let $\mathcal{B}=\{\al_1,\ldots,\al_n\}$ be a basis for $V$. We define a function $T$ from $V$ to $\F^n$, as follows: If $\al$ is in $V$, let $T\al$ be the $n$-tuple $(x_1,\ldots,x_n)$ of coordinates of $\al$ relative to the ordered basis $\mathcal{\be}$. Also, it's easy to verify $T$ is a linear transformation and $T$ is one-one and on-to.
 \end{proof}
-
-
-
+\begin{remark}
+One often identifies isomorphic spaces though the vectors and operations may be quite different.
+\end{remark}
+\section{Representation of Transformations by Matrices}
+Let $V$ be an $n$-dimensional vector space over the field \F and let $W$ be an $m$-dimensional vector space over \F. Let $\mathcal{B} = {\alphavec}$ be an ordered basis for $V$ and $\mathcal{B}'=\{\be_1,\ldots,\be_m\}$ an ordered basis for $W$. If $T$ is any linear transformation from $V$ to $W$, then $T$ is determined by its action on vectors $\al_j$. Each of the $n$ vectors $T\al_j$ is uniquely expressible as a linear combination $$T\al_j=\sum_{i=1}^{m}A_{ij}\be_i$$of the $\be_i$, the scalars $A_{1j},\ldots,A_{mj}$ being the coordinates of $T\al_j$ in the ordered basis $\mathcal{B}'$. Accordingly, the transformation $T$ is determined by the $mn$ scalars $A_{ij}$. The \mbyn matrix $A$ defined by $A(i,j)=A_{ij}$ is called \emph{the matrix of $T$ relative to the pair of ordered bases $\mathcal{B}$ and $\mathcal{B}'$}.\\
+If $\al=x_1\al_1+\cdots+x_n\al_n$ is a vector in $V$, then
+\begin{align*}
+T\al &= T\left(\sum_{j=1}^nx_j\al_j\right) \\&=\sum_{j=1}^nx_jT(\al_j)\\&=\sum_{j=1}^nx_j\sum_{i=1}^mA_{ij}\be_i \\&= \sum_{i=1}^m\left(\sum_{j=1}^nA_{ij}x_j\right)\be_i.
+\end{align*}
+If $X$ is the coordinate matrix of $\al$ in the ordered basis $\mathcal{B}$, then the computation above shows that $AX$ is the oordinate matrix of the vector $T\al$ in the ordered basis $\mathcal{B}'$, bacause the scalar$$\sum_{j=1}^nA_{ij}x_j$$is the entry in the $i$th row of the column matrix $AX$.\\
+We also observe that if $A$ is any \mbyn{} matrix over the field \F, then $$T\left(\sum_{j=1}^nx_j\al_j\right)=\sum_{i=1}^m\left(\sum_{j=1}^nA_{ij}x_j\right)\be_i$$defines a linear transformation $T$ from $V$ into $W$, the matrix of which is $A$, relative to $\mathcal{B},\mathcal{B}'$. We summarize formally:
+\begin{theorem}\label{ATT}
+Let $V$ be an $n$-dimensional vector spaces over the field \F and $W$ an $m$-dimensional vector space over \F. Let $\mathcal{B}$ be an ordered basis for $V$ and $\mathcal{B}'$ be an ordered basis for $W$. For each linear transformation $T$ from $V$ into $W$, there is an \mbyn{} matrix $A$ with entries in \F{} such that$$[T\al]_{\mathcal{B}'}=A[\al]_{\mathcal{B}}$$for every vector \al{} in $V$. Furthermore, $T\rightarrow A$ is a one-one correspondence between the set of all linear transformations from $V$ into $W$ and the set of all \mbyn{} matrices over the field \F. 
+\end{theorem}
+\begin{definition}
+The matrix $A$ associated with $T$ in Theorem \ref{ATT} is called the \emph{matrix of $T$ relative to the ordered bases $\mathcal{B},\mathcal{B}'$}.
+\end{definition}
+\begin{remark}
+Note that $A$ is the matrix whose columns $A_1,\ldots,A_n$ are given by $$A_j=[T\al_j]_{\mathcal{B}'},\quad j=1,\ldots,n.$$
+\end{remark}
+\begin{remark}
+If $T,U$ are linear transformation from $V$ into $W$ and $A=[A_1,\ldots,A_n],B=[B_1,\ldots,B_n]$ is the matrix of $T,U$ relative to the ordered bases $\mathcal{B},\mathcal{B}'$, then $cA+B$ is the matrix of $cT+U$ relative to $\mathcal{B},\mathcal{B}'$ because
+\begin{align*}
+cA_j+B_j &= c[T\al_j]_{\mathcal{B}'}+[U\al_j]_{\mathcal{B}'}\\&=[cT\al_j+U\al_j]_{\mathcal{B}'}\\&=[(cT+U)\al_j]_{\mathcal{B}'}.
+\end{align*}
+\end{remark}
+\begin{theorem}
+Let $V$ be an $n$-dimensional vector space over the field \F and let $W$ be an $m$-dimensional vector space over \F. For each pair of ordered bases $\mathcal{B},\mathcal{B}'$ for $V,W$ respectively, the function which assigns to a linear transformation $T$ its matrix relative to $\mathcal{B},\mathcal{B}'$ is an isomorphism between the space $L(V,W)$ and the space of all \mbyn{} matrices over the field \F.
+\end{theorem}
+\begin{proof}
+Omit.
+\end{proof}
+\begin{remark}
+If we are considering the representation by matrices of linear transformations of a space into itself, i.e., linear operators on a space $V$. In this case it's convenient to use the same ordered basis in each case, that is, to take $\mathcal{B}=\mathcal{B'}$. We shall then call the representing matrix simply \emph{the matrix of $T$ relative to the ordered basis $\mathcal{B}$}, denoted by $[T]_{\mathcal{B}}$. Note that we have$$[T\al]_{\mathcal{B}}=[T]_{\mathcal{B}}[\al]_{\mathcal{B}}.$$
+\end{remark}
+Let $V,W,$ and $Z$ be vector spaces over the field \F of respective dimensions $n,m$ and$p$. Let $T$ be a linear transformation from $V$ into $W$ and $U$ a linear transformation from $W$ into $Z$. Suppose we have ordered bases
+$$\mathcal{B}=\{\al_1,\ldots,\al_n\},\quad\mathcal{B'}=\{\be_1,\ldots,\be_m\},\quad\mathcal{B''}=\{\gamma_1,\ldots,\gamma_p\}$$for the respective spaces $V,W$ and $Z$.
 
 
 

@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex main.idx"] 1482559062 "main.idx" "main.ind" "main" 1483712177
-  "main.idx" 1483712177 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex main.idx"] 1482559062 "main.idx" "main.ind" "main" 1483718027
+  "main.idx" 1483718026 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "main.ilg"
   "main.ind"
-["pdflatex"] 1483712177 "main.tex" "main.pdf" "main" 1483712177
+["pdflatex"] 1483718026 "main.tex" "main.pdf" "main" 1483718027
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -34,6 +34,7 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
@@ -167,15 +168,15 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1480722360 1888048 f2c5faed5981a516f406b2ccc20bff71 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1463979169 3873397 413fbfbbedb8e719ddc392043a7add02 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "main.aux" 1483712177 1952 b064e77753b785c0d819f82e20d2f583 ""
+  "main.aux" 1483718027 2340 d03930d2fe4ed9a259ed2880fa16d082 ""
   "main.ind" 1483676862 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.tex" 1483712177 14132 c81ac9b28df4801e40b479ddf1f908f1 ""
-  "main.toc" 1483712177 290 a4908b8312785e73c991ecee06725668 ""
+  "main.tex" 1483718026 18798 a2f4d4caca661a18e345459e3f0cb185 ""
+  "main.toc" 1483718027 381 96b4dc2c0fb0881c1426379ca6f366f2 ""
   "mymacro.sty" 1483676862 2339 d28570ffe3ef5cac7c1050101dab1bf6 ""
   "mynotes.cls" 1483676862 5815 95afb5e96c69b464cab7dd29acb82f2e ""
   (generated)
-  "main.log"
-  "main.idx"
   "main.pdf"
   "main.aux"
+  "main.idx"
+  "main.log"
   "main.toc"
