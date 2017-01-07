@@ -45,7 +45,8 @@ Let $T$ be a linear transformation from $\F^m$ to $\F^n$. By Theorem \ref{t1} we
 \begin{remark}
 From Example \ref{exF} we show that we can give an explicit and reasonably simple description of all linear transformations from $\F^m$ to $\F^n$.
 \end{remark}
-\begin{remark}If $T$ is a linear transformatino from $V$ into $W$, then the range of $T$ is a subspace of $W$.\end{remark}
+\begin{remark}If $T$ is a linear transformatino from $V$ into $W$, then the range of $T$ is a subspace of $W$.
+\end{remark}
 \begin{remark}The set $N$ consisting of the vectors $\al\in V$ such that $T\al = 0$ is a subspace of $V$.
 \end{remark}
 \begin{definition}[null space, rank, nullity]
@@ -206,9 +207,31 @@ Omit.
 If we are considering the representation by matrices of linear transformations of a space into itself, i.e., linear operators on a space $V$. In this case it's convenient to use the same ordered basis in each case, that is, to take $\mathcal{B}=\mathcal{B'}$. We shall then call the representing matrix simply \emph{the matrix of $T$ relative to the ordered basis $\mathcal{B}$}, denoted by $[T]_{\mathcal{B}}$. Note that we have$$[T\al]_{\mathcal{B}}=[T]_{\mathcal{B}}[\al]_{\mathcal{B}}.$$
 \end{remark}
 Let $V,W,$ and $Z$ be vector spaces over the field \F of respective dimensions $n,m$ and$p$. Let $T$ be a linear transformation from $V$ into $W$ and $U$ a linear transformation from $W$ into $Z$. Suppose we have ordered bases
-$$\mathcal{B}=\{\al_1,\ldots,\al_n\},\quad\mathcal{B'}=\{\be_1,\ldots,\be_m\},\quad\mathcal{B''}=\{\gamma_1,\ldots,\gamma_p\}$$for the respective spaces $V,W$ and $Z$.
-
-
+$$\mathcal{B}=\{\al_1,\ldots,\al_n\},\quad\mathcal{B'}=\{\be_1,\ldots,\be_m\},\quad\mathcal{B''}=\{\gamma_1,\ldots,\gamma_p\}$$for the respective spaces $V,W$ and $Z$.Let $A$ be the matrix of $T$ relative to the pair $\mathcal{B},\mathcal{B'}$ and let $B$ be the matrix of $U$ relative to pair $\mathcal{B},\mathcal{B''}$. It is then easy to see that the matrix $C$ of the transformation $UT$ relative to the pair $\mathcal{B},\mathcal{B''}$ is the product of $B$ and $A$; for , if \al is any vector in $V$ $$[T\al]_{\mathcal{B'}} = A[\al]_{\mathcal{B}}$$$$[U(T\al)]_{\mathcal{B''}}=B[T\al]_{\mathcal{B'}}$$and so $$[(UT)(\al)]_{\mathcal{B''}}=BA[\al]_{\mathcal{B}}$$and hence, by the definition and uniqueness of the representing matrix, we must have $C=BA$. One can also see this by carrying out the computation \begin{align*} (UT)(\al_j)&=U(T\al_j)\\&=U\left(\sum_{k=1}^mA_{kj}\be_k\right)\\&=\sum_{k=1}^mA_{kj}(U\be_k)\\&=\sum_{k=1}^mA_{kj}\sum_{i=1}^pB_{ik}\gamma_i\\&=\sum_{i=1}^p\left(\sum_{k=1}^mB_{ik}A_{kj}\gamma_i\right)\end{align*} so that we must have $$C_{ij} =\sum_{k=1}^mB_{ik}A_{kj}.$$
+\begin{theorem}\label{baseth}
+Let $V,W,$ and $Z$ be finite-dimensional vector spaces over the field \F; let $T$ be linear transformation from $V$ into $W$ and $U$ a linear transformation from $W$ into $Z$. If $\mathcal{B},\mathcal{B'},$ and $\mathcal{B''}$ are ordered bases for the spaces $V,W,$ and $Z$, respectively, if $A$ is the matrix of $T$ relative to the pair $\mathcal{B},\mathcal{B'}$, and $B$ is the matrix of $U$ relative to the pair $\mathcal{B'},\mathcal{B''}$, then the matrix of the composition $UT$ relative to the pair $\mathcal{B},\mathcal{B''}$ is the product matrix $C=BA$.
+\end{theorem}
+\begin{remark}
+Theorem \ref{baseth} gives a proof that matrix multiplication is assciative. (a proof which requires no calculations)
+\end{remark}
+\begin{remark}
+If $T$ and $U$ are linear operators on a space $V$ and we are representing by a single ordered basis $\mathcal{B}$, then Theorem \ref{baseth} assumes the simple form $[UT]_{\mathcal{B}}=[U]_{\mathcal{B}}[T]_{\mathcal{B}}$. Thus in this case, the correspondence with $\mathcal{B}$ determines between operators and matices is not only a vector space isomorphism but also preserves products. A simple consequence of this is that the linear operator $T$ is invertible if and only if $[T]_{\mathcal{B}}$ is an invertible matrix . For identity operator $I$ is represented by the identity matrix in any  ordered basis, and thus $$UT=TU = I$$ is equivalent to $$[U]_{\mathcal{B}}[T]_{\mathcal{B}}=[T]_{\mathcal{B}}[U]_{\mathcal{B}}=I.$$Of course, when $T$ is invertible $$[T^{-1}]_{\mathcal{B}} = [T]_{\mathcal{B}}^{-1}.$$
+\end{remark}
+Let $T$ be a linear operator on the finite-dimensional space $V$, and let $$\mathcal{B}=\{\al_1,\ldots,\al_n\}\quad \mathcal{B'}=\{\al_1',\ldots,\al_n'\}$$be two ordered bases for $V$. How are the matrices $[T]_{\mathcal{B}}$ and $[T]_{\mathcal{B'}}$ related?
+We observe there is a unique and invertible $n\times n$ matrix $P$ such that $$[\al]_{\mathcal{B}}=P[\al]_{\mathcal{B'}}$$for every vector $\al$ in $V$. It is the matrix $P=[P_1,\ldots,P_n]$ where $P_j = [\al_j']_{\mathcal{B}}$. By definition$$[T\al]_{\mathcal{B}}=[T]_{\mathcal{B}}[\al]_{\mathcal{B}}.$$So we have $$[T\al]_{\mathcal{B}} = P[T\al]_{\mathcal{B'}}.$$ $$[T]_{\mathcal{B}}P[\al]_{\mathcal{B'}}=P[T\al]_{\mathcal{B'}}$$or$$P^{-1}[T]_{\mathcal{B}}P[\al]_{\mathcal{B'}}=[T\al]_{\mathcal{B'}}$$ and so it must be that $$[T]_{\mathcal{B'}}=P^{-1}[T]_{\mathcal{B}}P.$$
+\begin{remark}
+There is a unique linear operator $U$ which carries $\mathcal{B}$ onto $\mathcal{B'}$, defined by $$U\al_j=\al_j',\quad j=1,\ldots,n.$$This operator $U$ is invertible since it carries a basis for $V$ onto a basis for $V$. The matrix $P$ is precisely the matrix of the operator $U$ in the ordered basis $\mathcal{B}$. For, $P$ is defined by $$\al_j'=\sum_{i=1}^nP_{ij}\al_i$$and since $U\al_j=\al_j'$, this equation can be written $$U\al_j=\sum_{i=1}^nP_{ij}\al_i.$$So $P=[U]_{\mathcal{B}}$, by definition.
+\end{remark}
+\begin{theorem}
+Let $V$ be a finite-dimensional vector space over the field \F, and let $$\mathcal{B} =\{\al_1,\ldots,\al_n\}\quad\mbox{and}\quad\mathcal{B'}=\{\al_1',\ldots,\al_n'\}$$be ordered bases for $V$. Suppose $T$ is a linear operator on $V$. If $P=[P_1,\ldots,P_n]$ is the $n\times n$ matrix with columns $P_j = [\al_j']_{\mathcal{B}}$, then $$[T]_{\mathcal{B'}} = P^{-1}[T]_{\mathcal{B}}P.$$Alternatively, if $U$ is the invertible operator on $V$ defined by $U\al_j=\al_j',j=1,\ldots,n$, then $$[T]_{\mathcal{B'}} = [U]_{\mathcal{B}}^{-1}[T]_{\mathcal{B}}[U]_{\mathcal{B}}$$
+\end{theorem}
+\begin{definition}[similar]
+Let $A$ and $B$ be $n\times n$ matrices over the field \F. We say that $B$ is similar to $A$ over \F if there is an ivertible $n\times n$ matrix $P$ over \F such that $B=P^{-1}AP.$
+\end{definition}
+\begin{remark}
+Similarity is an equivalence relation on the set of $n\times n$ matrices over the field \F.
+\end{remark}
+\section{Linear Functionals}
 
 
 
