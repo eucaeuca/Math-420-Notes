@@ -73,7 +73,7 @@ Let $V$ and $W$ be vector spaces over the field \F. Let $T$ and $U$ be linear tr
 \begin{remark}
 We denote the space of linear transformations from $V$ into $W$ by $L(V,W)$.
 \end{remark}
-\begin{theorem}
+\begin{theorem}\label{mnthm}
 Let $V$ be an $n$ dimensional vector space over the field \F, and let $W$ be an $m$ dimensional vector spaces over the field \F. Then the space $L(V,W)$ is finite-dimensional and has dimension $mn$.
 \end{theorem}
 \begin{proof}
@@ -169,7 +169,7 @@ If $V$ is isomorphic to $W$, then $W$ is isomorphic to $V$.
 Every $n$-dimensional vector space over the field \F is isomorphic to the space $\F^n.$
 \end{theorem}
 \begin{proof}
-Let $V$ be an $n$-dimensional vector space over the field \F and let $\mathcal{B}=\{\al_1,\ldots,\al_n\}$ be a basis for $V$. We define a function $T$ from $V$ to $\F^n$, as follows: If $\al$ is in $V$, let $T\al$ be the $n$-tuple $(x_1,\ldots,x_n)$ of coordinates of $\al$ relative to the ordered basis $\mathcal{\be}$. Also, it's easy to verify $T$ is a linear transformation and $T$ is one-one and on-to.
+Let $V$ be an $n$-dimensional vector space over the field \F{} and let $\mathcal{B}=\{\al_1,\ldots,\al_n\}$ be a basis for $V$. We define a function $T$ from $V$ to $\F^n$, as follows: If $\al$ is in $V$, let $T\al$ be the $n$-tuple $(x_1,\ldots,x_n)$ of coordinates of $\al$ relative to the ordered basis $\mathcal{\be}$. Also, it's easy to verify $T$ is a linear transformation and $T$ is one-one and on-to.
 \end{proof}
 \begin{remark}
 One often identifies isomorphic spaces though the vectors and operations may be quite different.
@@ -232,8 +232,15 @@ Let $A$ and $B$ be $n\times n$ matrices over the field \F. We say that $B$ is si
 Similarity is an equivalence relation on the set of $n\times n$ matrices over the field \F.
 \end{remark}
 \section{Linear Functionals}
-
-
+\begin{definition}[linear functional]
+If $V$ is a vector space over the field \F, a linear transformation $f$ from $V$ into the scalar field \F is also called a \emph{linear functional} on $V$.
+\end{definition}
+\begin{definition}[dual space]
+If $V$ is finite-dimensional, the collection of all linear functionals on $V$ forms a vector spaces in a natural way. It is the space $L(V,\F)$. We denote this space by $V^*$ and call it the \emph{dual space} of $V$.
+\end{definition}
+If $V$ is finite-dimensional, we can obtain a rather explicit description of the dual space $V^*$. From Theorem \ref{mnthm} we know that 
+$$\dim{V*} = \dim{V}.$$
+Let $\mathcal{B}=\{$
 
 
 
